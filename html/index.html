@@ -1,0 +1,24 @@
+  
+<html>
+    <body>
+      <h1>Exemplo de formulário para o Show me the Leads</h1>
+      <form method="POST" action="URL do seu time">
+        <input
+          name="name"
+          type="text"
+          pattern="^\D{2,}\s[\D\s]{2,}$"
+          title="Digite seu nome completo"
+          required
+        />
+        <input
+          name="email"
+          type="email"
+          title="Digite um email válido"
+          required
+        />
+        <input name="redirectTo" type="hidden" value="https://gama.academy" />
+        <input name="debugMode" type="hidden" value="true" />
+        <input type="submit" />
+      </form>
+    </body>
+  </html>
