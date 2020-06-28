@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@700&display=swap');
+:root{
+    --azul: #3A68FF;
+    --background: #F5F5F5;
+    --borda-formulario: #707070;
+}
+
+p, h1, h2, h3{
+    font-family: 'Muli', sans-serif;
+    font-family: 7px;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        width: 90vw;
+        background-image: url("../img/trianguloPequenoEditado.png");
+        background-repeat: no-repeat; 
+        background-size: 75vw;
+        background-position: top right;
+        height: 100vh;
+        padding: 3vw;
+        background-color: #F5F5F5 !important; 
+    }
+
+    .topo-header{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topo-header img {
+        width: 30vw;
+    }
+
+    .texto1 h1{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .conteudo1{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .foto-ebook{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+    }
+
+    .foto-ebook img{
+        width: 40vw;
+    }
+
+    .conteudo2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .texto2{
+        width: 30vw;
+    }
+
+    .texto2 h1{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .formulario-total{
+        margin-top: 10vh;
+        background-color: white;
+        border: solid #707070 2px;
+        border-radius: 16px;
+        width: 35vw;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo-form{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .formulario{
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .botao{
+        width: 25vw;
+        border: solid var(--azul);
+        background-color: var(--azul);
+        border-radius: 8px;
+        color: white;
+        font-size: 1.4em;
+        font-weight: 700;
+        /* margin-left: 6vw; */
+    }
+
+    .rodape{
+        margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-rodape img{
+      width: 25vw;
+    }
+
+
+}
+
+@media screen and (max-width: 375px){
+    body{
+        padding: 3vw;
+        background-color: #F5F5F5 !important;
+        width: 100vw;
+    }
+    .topo-header{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topo-header img {
+        width: 50vw;
+    }
+
+    .texto1 h1{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .foto-ebook{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+    }
+
+    .foto-ebook img{
+        width: 60vw;
+    }
+
+    .texto2 h1{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .formulario-total{
+        margin-top: 10vh;
+    }
+
+    .titulo-form{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .formulario{
+        width: 90vw;
+        /* display: flex;
+        align-items: center;
+        flex-direction: column; */
+    }
+
+    .botao{
+        width: 80vw;
+        border: solid var(--azul);
+        background-color: var(--azul);
+        border-radius: 8px;
+        color: white;
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-left: 6vw;
+    }
+
+    .rodape{
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-rodape img{
+      width: 32vw;
+    }
+
+
+}
