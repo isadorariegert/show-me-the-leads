@@ -235,7 +235,7 @@ body{
 
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 420px){
     body{
         background-image: none;
         padding: 3vw;
