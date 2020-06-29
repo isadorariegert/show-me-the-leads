@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@700&display=swap');
+
 :root{
     --azul: #3A68FF;
     --background: #F5F5F5;
@@ -11,46 +12,86 @@ p, h1, h2, h3{
     font-family: 7px;
 }
 
+.flex-align-center {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;    
+}
+
+.flex-space-around {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+}
+
 body{
     width: 90vw;
     background-image: url("../img/trianguloPequenoEditado.png");
     background-repeat: no-repeat; 
     background-size: 45vw;
     background-position: top right;
-    /* height: 5vh; */
     padding: 3vw;
     background-color: #F5F5F5 !important; 
 }
 
 .topo-header{
     width: 90vw;
-    display: flex;
     justify-content: left;
-    align-items: center;
     height: 10vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: left;
+    -moz-justify-content: left;
+    -ms-justify-content: left;
+    -o-justify-content: left;
+    justify-content: left;
 }
 
 .topo-header img {
     width: 20vw;
 }
 
+.texto2 p,
 .texto1 p{
     font-size: 1.8em;
     width: 40vw;
     margin-left: 15px;
 }
 
-.conteudo1{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .foto-ebook{
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 4vh 0;
 }
 
@@ -58,31 +99,18 @@ body{
     width: 22vw;
 }
 
-.conteudo2{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.texto2{
-    font-size: 1.8em;
-    width: 40vw;
-    margin-left: 10px;
-}
-
-
 .formulario-total{
-
     margin-top: 10vh;
     background-color: white;
     border: solid #707070 2px;
     border-radius: 16px;
     width: 28vw;
     padding: 12px;
-    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .titulo-form{
@@ -91,11 +119,21 @@ body{
 }
 
 .formulario{
-    /* width: 100vw; */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     flex-direction: column;
-    align-items: center;
-   
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;   
 }
 
 .formulario input{
@@ -103,22 +141,23 @@ body{
 }
 
 .botao{
-    width: 20vw;
+    width: 10em;
     border: solid var(--azul);
     background-color: var(--azul);
     border-radius: 8px;
     color: white;
     font-size: 1em;
     font-weight: 700;
-    /* margin-left: 6vw; */
-    height: 7vh;
+    height: 3em;
 }
 
 .rodape{
     margin: 15px 0;
-    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     flex-direction: column;
-    align-items: center;
 }
 
 .logo-rodape img{
@@ -139,9 +178,6 @@ body{
 
     .topo-header{
         width: 90vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .topo-header img {
@@ -153,17 +189,8 @@ body{
         width: 35vw;
     }
 
-    .conteudo1{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
     .foto-ebook{
         width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 4vh 0;
     }
 
@@ -173,8 +200,10 @@ body{
 
     .conteudo2{
         width: 80vw;
-        display: flex;
-        align-items: center;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
         justify-content: space-between;
     }
 
@@ -191,10 +220,6 @@ body{
         border-radius: 16px;
         width: 35vw;
         padding: 8px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .titulo-form{
@@ -203,29 +228,20 @@ body{
     }
 
     .formulario{
-        width: 30vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
+        width: 30vw;       
     }
 
     .botao{
-        width: 25vw;
         border: solid var(--azul);
         background-color: var(--azul);
         border-radius: 8px;
         color: white;
         font-size: 1em;
         font-weight: 700;
-        /* margin-left: 6vw; */
     }
 
     .rodape{
         margin: 15px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .logo-rodape img{
@@ -258,9 +274,12 @@ body{
     }
     
     .conteudo1{
-        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
         flex-direction: column;
-        justify-content: center;
+        width: 90vw;
     }
 
     .texto1 p{
@@ -271,9 +290,6 @@ body{
 
     .foto-ebook{
         width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 4vh 0;
     }
 
@@ -306,9 +322,6 @@ body{
 
     .formulario{
         width: 90vw;
-        /* display: flex;
-        align-items: center;
-        flex-direction: column; */
     }
 
     .formulario input{
@@ -323,19 +336,13 @@ body{
         color: white;
         font-size: 1em;
         font-weight: 700;
-        /* margin-left: 6vw; */
     }
 
     .rodape{
         margin-top: 10vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .logo-rodape img{
       width: 32vw;
     }
-
-
 }
