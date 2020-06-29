@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@700&display=swap');
+:root{
+    --azul: #3A68FF;
+    --background: #F5F5F5;
+    --borda-formulario: #707070;
+}
+
+p, h1, h2, h3{
+    font-family: 'Muli', sans-serif;
+    font-family: 7px;
+}
+
+body{
+    width: 90vw;
+    background-image: url("../img/trianguloPequenoEditado.png");
+    background-repeat: no-repeat; 
+    background-size: 45vw;
+    background-position: top right;
+    /* height: 5vh; */
+    padding: 3vw;
+    background-color: #F5F5F5 !important; 
+}
+
+.topo-header{
+    width: 90vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10vh;
+}
+
+.topo-header img {
+    width: 20vw;
+}
+
+.texto1 p{
+    font-size: 1.8em;
+    width: 40vw;
+    margin-left: 15px;
+}
+
+.conteudo1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.foto-ebook{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh 0;
+}
+
+.foto-ebook img{
+    width: 22vw;
+}
+
+.conteudo2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto2{
+    font-size: 1.8em;
+    width: 40vw;
+    margin-left: 10px;
+}
+
+
+.formulario-total{
+
+    margin-top: 10vh;
+    background-color: white;
+    border: solid #707070 2px;
+    border-radius: 16px;
+    width: 28vw;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-form{
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.formulario{
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.formulario input{
+    width: 25vw;
+}
+
+.botao{
+    width: 20vw;
+    border: solid var(--azul);
+    background-color: var(--azul);
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    /* margin-left: 6vw; */
+    height: 7vh;
+}
+
+.rodape{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-rodape img{
+  width: 15vw;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        width: 90vw;
+        background-image: url("../img/trianguloPequenoEditado.png");
+        background-repeat: no-repeat; 
+        background-size: 65vw;
+        background-position: top right;
+        height: 100vh;
+        padding: 3vw;
+        background-color: #F5F5F5 !important; 
+    }
+
+    .topo-header{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topo-header img {
+        width: 30vw;
+    }
+
+    .texto1 p{
+        font-size: 1.2em;
+        width: 35vw;
+    }
+
+    .conteudo1{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .foto-ebook{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+    }
+
+    .foto-ebook img{
+        width: 30vw;
+    }
+
+    .conteudo2{
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .texto2 p{
+        font-size: 0.7em;
+        width: 30vw;
+        margin-left: 0;
+    }
+
+    .formulario-total{
+        margin-top: 10vh;
+        background-color: white;
+        border: solid #707070 2px;
+        border-radius: 16px;
+        width: 35vw;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo-form{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .formulario{
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .botao{
+        width: 25vw;
+        border: solid var(--azul);
+        background-color: var(--azul);
+        border-radius: 8px;
+        color: white;
+        font-size: 1em;
+        font-weight: 700;
+        /* margin-left: 6vw; */
+    }
+
+    .rodape{
+        margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-rodape img{
+      width: 25vw;
+    }
+
+
+}
+
+@media screen and (max-width: 420px){
+    body{
+        background-image: none;
+        padding: 3vw;
+        background-color: #F5F5F5 !important;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topo-header{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .topo-header img {
+        width: 50vw;
+    }
+    
+    .conteudo1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .texto1 p{
+        font-size: 1.2em;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .foto-ebook{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4vh 0;
+    }
+
+    .foto-ebook img{
+        width: 60vw;
+    }
+
+    .conteudo2{
+        display: block;
+        width: 90vw;
+        margin-left: 15px;
+    }
+
+    .texto2 p{
+        font-size: 0.8em;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .formulario-total{
+        margin-top: 20px;
+        width: 80vw;
+        margin-left: 20px;
+    }
+
+    .titulo-form{
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .formulario{
+        width: 90vw;
+        /* display: flex;
+        align-items: center;
+        flex-direction: column; */
+    }
+
+    .formulario input{
+        width: 60vw;
+    }
+
+    .botao{
+        width: 50vw;
+        border: solid var(--azul);
+        background-color: var(--azul);
+        border-radius: 8px;
+        color: white;
+        font-size: 1em;
+        font-weight: 700;
+        /* margin-left: 6vw; */
+    }
+
+    .rodape{
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-rodape img{
+      width: 32vw;
+    }
+
+
+}
